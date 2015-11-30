@@ -7,6 +7,7 @@
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+
 }
 
 .text-muted {
@@ -20,12 +21,13 @@ body {
 }
 
 p {
-    font-size: 14px;
-    line-height: 1.75;
+    font-size: 15px;
+    line-height: 1.2;
 }
 
 p.large {
     font-size: 16px;
+    line-height: 1.2;
 }
 
 a,
@@ -37,7 +39,9 @@ a.active {
 }
 
 a {
-    color: #5CA89E
+    color: #5CA89E;
+    font-size: 15px;
+    line-height: 1.2;
 
 ;
 }
@@ -75,14 +79,14 @@ h6 {
 }
 
 .btn-primary {
-    border-color: #5CA89E
+    border-color: #8A9BA8
 
 ;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #fff;
-    background-color: #5CA89E;
+    background-color: #ffffff;
 }
 
 .btn-primary:hover,
@@ -136,9 +140,30 @@ fieldset[disabled] .btn-primary.active {
 
 ;
 }
+.btn-xlend {
+  font-size: 1.8rem;
+  padding: 13px 20px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  /*color: #8a9ba8;
+  border: 2px solid #8a9ba8*/
+  opacity: 0.7;
+  font-weight: 700;
+  border: 2px solid #8a9ba8;
+  background-color: transparent;
+  color: #D6D9DB;
+}
+.btn-xlend:hover{
+    color: #fff;
+    border-color: #fff;
+}
 
 .btn-xl {
-    padding: 20px 40px;
+    font-size: 1.8rem;
+    padding: 13px 20px;
     border-color: #5CA89E
 
 ;
@@ -147,14 +172,20 @@ fieldset[disabled] .btn-primary.active {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
-    color: #fff
+    color: #8a9ba8;
+    border: 2px solid #8a9ba8
+
 
 
 
 ;
-    background-color: #5CA89E
+    background-color: transparent;
 
 ;
+}
+
+.btn-header {
+
 }
 
 .btn-xl:hover,
@@ -162,8 +193,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: ##418D83;
-    color: #fff
+    border-color: #000;
+    color: #000
 
 
 
@@ -214,7 +245,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #1d2120
+    background-color: #1d2120;
 ;
 }
 
@@ -229,13 +260,21 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #5CA89E
-;
+    ;
 }
 
 .navbar-default .navbar-collapse {
     border-color: rgba(255,255,255,.02);
+
 }
+
+/*.navbar.sticky {
+    background-color: #fff;
+     background-color: rgba(255,255,255,0.95);
+     -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0,0,0,1);
+}*/
 
 .navbar-default .navbar-toggle {
     border-color: none;
@@ -286,11 +325,8 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #fff
+    color: #000;
 
-;
-    background-color: #ba9077
-;
 }
 
 @media(min-width:768px) {
@@ -308,6 +344,15 @@ fieldset[disabled] .btn-xl.active {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
+
+    }
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+        color: #000;
+
     }
 
     .navbar-default .navbar-nav>.active>a {
@@ -316,8 +361,14 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #1d2120
-;
+        background-color: #fff;
+         background-color: rgba(255,255,255,0.95);
+         -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        box-shadow: 0 2px 4px rgba(0,0,0,1);
+    }
+    .navbar-default.navbar-shrink .nav li a {
+      color: #000;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -386,6 +437,16 @@ header .intro-text .intro-heading {
 
 header .intro-text .intro-btn{
     margin-top:100px;
+    opacity: 0.7;
+    font-weight: 700;
+    border: 2px solid #8a9ba8;
+    background-color: transparent;
+    color: #D6D9DB;
+}
+
+header .intro-text .intro-btn:hover{
+    border-color: #fff;
+    color: #fff;
 }
 
 @media(min-width:768px) {
@@ -400,6 +461,7 @@ header .intro-text .intro-btn{
         font-size: 40px;
         font-style: italic;
         line-height: 40px;
+        color: #d6d9db;
     }
 
     header .intro-text .intro-heading {
